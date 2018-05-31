@@ -1,0 +1,231 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+.btn-secondary {
+    position: relative;
+    left:43%;
+    text-align: center;
+    width:200px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.cover {
+    height:590px;
+    width:1282px;
+    background: url(../images/background.png) no-repeat;
+    background-size:1600px 590px;
+}
+#homeLogo {
+    display:block;
+    position: absolute;
+    left:47%;
+    top:30%;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    height:100px;
+    width:100px;
+}
+h3{
+    position: relative;
+    padding-top:290px;
+    text-align: center;
+    color: white;
+}
+.btn-secondary:hover {
+    background-color: #bd49c8;
+    border-color: #bd49c8;
+}
+/* ---------------- LOGIN --------------- */
+#Login {
+    position: absolute;
+    height:172px;
+    width:100%;
+    background-color: white;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    background-color:#a17bcb!important;
+    margin-top: 100px;
+    position: relative;
+}
+.btn-outline-success {
+border-color: white;
+    color:white;
+    margin-bottom: 10px;
+}
+.btn-outline-success:hover{
+    background-color:white;
+    color:#bd49c8;
+    border-color: #bd49c8;
+}
+.collapse.navbar-collapse {
+    margin-top: 10px;
+    height:40px;
+}
+.form-control.ml-sm-2 {
+    margin-bottom:10px;
+}
+.btn.btn-outline-success.my-2.my-sm-0 {
+    margin-bottom: 10px!important;
+}
+.navbar-brand {
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 70px;
+}
+#logo {
+    display:block;
+    position: absolute;
+    left:90%;
+    top:5%;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    height:80px;
+    width:80px;
+}
+.Slogan {
+    position: absolute;
+    left:60%;
+    top:22%;
+    font-family: Helvetica;
+}
+.cham {
+    height:30px;
+    width:30px;
+    margin-bottom:6px;
+}
+.logout {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+}
+.myEvents {
+    position: absolute;
+    top:172px;
+    height: 100%;
+    width: 100%;
+}
+h5 {
+    top: 10%;
+    right:20%;
+    position: relative;
+    float: right;
+}
+.event1 {
+    position: relative;
+    float: right;
+    top:25%;
+    right:10%;
+    text-align: right;
+    background-color: #a17bcb;
+    height: 100px;
+    width:200px;
+}
+.event2 {
+    position: relative;
+    top:65%;
+    left:65%;
+    text-align: right;
+    background-color: #a17bcb;
+    height: 100px;
+    width:200px;
+}
+.invite1 {
+    position: absolute;
+    left:40%;
+}
+.invite2 {
+    position: absolute;
+    left:40%;
+    top:55%;
+}
+
+.btn.btn-primary.active {
+    position: absolute;
+    top:2%;
+    left:88%;
+    background-color: #a17bcb!important;
+    border-color: black!important;
+}
+.sitArrange {
+    position: absolute;
+    top:172px;
+    height: 100%;
+    width: 100%;
+}
+.upload1 {
+    position: absolute;
+    top:25%;
+    left:59.5%;
+    height: 100px;
+    width:300px;
+}
+.upload2 {
+    float:right;
+    position: absolute;
+    top:25%;
+    left:25%;
+    height: 100px;
+    width:200px;
+}
+.img1 {
+    height:300px;
+    width:300px;
+    position: absolute;
+    left:58%;
+    top:35%;
+    background: url("../images/excel.png") no-repeat;
+    background-size: 300px 300px;
+}
+.img2 {
+    height:300px;
+    width:300px;
+    position: absolute;
+    left:20%;
+    top:35%;
+    background: url("../images/file.png") no-repeat;
+    background-size: 300px 300px;
+}
+.guestList {
+    position: absolute;
+    top:172px;
+    height: 100%;
+    width: 100%;
+}
+.into {
+    text-align: right;
+    position: absolute;
+    top:25%;
+    left:40.5%;
+    height: 100px;
+    width:500px;
+}
+section .fa.fa-user-o , section .fa.fa-plus-circle  {
+    color: #a17bcb;
+}
+.table.table-striped {
+    text-align: right;
+    position: relative;
+    top:50%;
+    left:15%;
+    width:70%;
+    height:5%;
+}
+.table-striped tbody tr:nth-of-type(odd){
+    background-color: #a17bcb;
+}
+.btn.btn-primary {
+    position: absolute;
+    top:40%;
+    left:15%;
+    background-color: #a17bcb!important;
+    border-color: black!important;
+}
+.form-control.mr-sm-2 {
+    position: absolute;
+    top:40%;
+    left:68.7%;
+}

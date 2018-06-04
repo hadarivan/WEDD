@@ -19,7 +19,7 @@
         left: 43%;
     }
     .cover {
-        background: url(../images/background.png) no-repeat;
+        background: url(../images/background.png) no-repeat #a17bcb;
         background-size: 1600px 590px;
         min-height: 590px;
         width: 100%;
@@ -160,7 +160,7 @@
 
     .Slogan {
         color: white;
-        font-size: 18px;
+        font-size: 22px!important;
         top: 50%;
         left: 5%;
     }
@@ -402,7 +402,8 @@
 
     .Slogan {
         position: absolute;
-        font-family: Helvetica;
+        font-family: 'Handlee', cursive;
+        font-size: 25px;
     }
 
     .cham {
@@ -637,5 +638,8 @@
     .btn.btn-success a {
         color: white;
         text-decoration: none;
+    }
+    .cover h3 {
+        font-family: 'Handlee', cursive;
     }
 

@@ -1,4 +1,8 @@
 
+$("#process").click(function () {
+    alert("הסידור נוצר בהצלחה");
+});
+
 var popup1 = document.getElementById('popup1');
 
 // Get the button that opens the modal
@@ -15,13 +19,6 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     popup1.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == popup1) {
-        popup1.style.display = "none";
-    }
 };
 
 
@@ -86,24 +83,7 @@ addRow2.onclick = function () {
     popup1.style.display = "none";
 
 }
-/*
-var deleteRow = document.getElementById('delete');
-deleteRow.onclick = function (){
-    $('table2')
-        .find('td')
-        .append('<input type="button" value="Delete" class="del"/>')
-        .parent()//traversing to 'tr' Element
-        .append('<td><input type="button" value="Delete row" class="delrow" /></td>');
-    console.log(this);
-    $('.del').click(function() {
-        $(this).parent().remove(); //Deleting TD element
-    });
 
-    $('.delrow').click(function(){
-        $(this).parent().parent().remove(); //Deleting the Row (tr) Element
-    });
-};
-*/
 
 var popup2 = document.getElementById('popup2');
 var tableSize=document.getElementById('table1').getElementsByTagName('tbody')[0];
@@ -150,9 +130,5 @@ update.onclick = function () {
     y[3].innerHTML=11+countGuest;
     popup2.style.display = "none";
 
-}
-
-function Process() {
-    alert("הסידור נוצר בהצלחה");
 }
 

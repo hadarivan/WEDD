@@ -2,230 +2,640 @@
     margin:0px;
     padding:0px;
 }
-.btn-secondary {
-    position: relative;
-    left:43%;
-    text-align: center;
-    width:200px;
-    margin-bottom: 15px;
-    border: 1px solid white;
-    background-color: transparent;
-}
-.cover {
-    height:590px;
-    width:1282px;
-    background: url(../images/background.png) no-repeat;
-    background-size:1600px 590px;
-}
-#homeLogo {
-    display:block;
-    position: absolute;
-    left:47%;
-    top:30%;
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
-    background-size: 100px 100px;
-    height:100px;
-    width:100px;
-}
-h3{
-    position: relative;
-    padding-top:290px;
-    text-align: center;
-    color: white;
-}
-.btn-secondary:hover {
-    background-color: #bd49c8;
-    border-color: #bd49c8;
-}
-/* ---------------- LOGIN --------------- */
-#Login {
-    position: absolute;
-    height:172px;
-    width:100%;
-    background-color: white;
-}
-.navbar.navbar-expand-lg.navbar-light.bg-light{
-    background-color:#a17bcb!important;
-    margin-top: 100px;
-    position: relative;
-}
-.btn-outline-success {
-border-color: white;
-    color:white;
-    margin-bottom: 10px;
-}
-.btn-outline-success:hover{
-    background-color:white;
-    color:#bd49c8;
-    border-color: #bd49c8;
-}
-.collapse.navbar-collapse {
-    margin-top: 10px;
-    height:40px;
-}
-.form-control.ml-sm-2 {
-    margin-bottom:10px;
-}
-.btn.btn-outline-success.my-2.my-sm-0 {
-    margin-bottom: 10px!important;
-}
-.navbar-brand {
-    font-size: 16px;
-    margin-top: 2px;
-    margin-left: 70px;
-}
-#logo {
-    display:block;
-    position: absolute;
-    left:90%;
-    top:5%;
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
-    background-size: 80px 80px;
-    height:80px;
-    width:80px;
-}
-.Slogan {
-    position: absolute;
-    left:60%;
-    top:22%;
-    font-family: Helvetica;
-}
-.cham {
-    height:30px;
-    width:30px;
-    margin-bottom:6px;
-}
-.logout {
-    position: absolute;
-    top: 15%;
-    left: 4%;
-}
-.myEvents {
-    position: absolute;
-    top:172px;
-    height: 100%;
-    width: 100%;
-}
-h5 {
-    top: 10%;
-    right:20%;
-    position: relative;
-    float: right;
-}
-.event1 {
-    position: relative;
-    float: right;
-    top:25%;
-    right:10%;
-    text-align: right;
-    background-color: #a17bcb;
-    height: 100px;
-    width:200px;
-}
-.event2 {
-    position: relative;
-    top:65%;
-    left:65%;
-    text-align: right;
-    background-color: #a17bcb;
-    height: 100px;
-    width:200px;
-}
-.invite1 {
-    position: absolute;
-    left:40%;
-}
-.invite2 {
-    position: absolute;
-    left:40%;
-    top:55%;
+
+@media only screen and (min-width: 481px) {
+
+    h3 {
+        position: relative;
+        padding-top: 290px;
+        text-align: center;
+        color: white;
+    }
+
+    #homeLogo {
+        left: 47%;
+    }
+    .btn-secondary {
+        left: 43%;
+    }
+    .cover {
+        background: url(../images/background.png) no-repeat;
+        background-size: 1600px 590px;
+        min-height: 590px;
+        width: 100%;
+    }
+    #logo {
+        display: block;
+        position: absolute;
+        left: 90%;
+        top: 5%;
+        background-image: url(../images/logo.png);
+        background-repeat: no-repeat;
+        background-size: 80px 80px;
+        height: 80px;
+        width: 80px;
+    }
+    .Slogan {
+        left: 60%;
+        top: 22%;
+    }
+    .invite1 {
+        position: absolute;
+        left: 40%;
+    }
+
+    .invite2 {
+        position: absolute;
+        left: 40%;
+        top: 55%;
+    }
+    .btn.btn-primary.active {
+        left: 88%;
+        top:2%;
+    }
+
+    .event1 {
+        float: right;
+        right: 10%;
+    }
+    .navbar.navbar-expand-lg.navbar-light.bg-light {
+        position: relative;
+    background-color: #a17bcb!important;   ;
+        margin-top: 100px;
+    }
+    .btn.btn-primary.active {
+        position: absolute;
+        background-color: #a17bcb !important;
+        border-color: black !important;
+    }
+    .img1 {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 58%;
+        top: 35%;
+        background: url("../images/excel.png") no-repeat;
+        background-size: 300px 300px;
+    }
+
+    .img2 {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 20%;
+        top: 35%;
+        background: url("../images/file.png") no-repeat;
+        background-size: 300px 300px;
+    }
+    .into {
+        text-align: right;
+        position: absolute;
+        top: 25%;
+        left: 40.5%;
+        height: 100px;
+        width: 500px;
+    }
+    .desk1 {
+        float: left;
+        top: 50%;
+    }
+    .fa-envelope-o, .fa-check-square-o, .fa-list-alt, .fa-calendar-check-o  {
+        display: none;
+    }
 }
 
-.btn.btn-primary.active {
-    position: absolute;
-    top:2%;
-    left:88%;
-    background-color: #a17bcb!important;
-    border-color: black!important;
+/* ----------------- Mobile ----------- */
+
+@media only screen and (max-width: 480px) {
+
+    h3 {
+        position: relative;
+        padding-top: 290px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    #homeLogo {
+        left: 41%;
+    }
+
+    .btn-secondary {
+        left: 30%;
+    }
+
+    .cover {
+        background: url(../images/mobilebackground.png) no-repeat;
+        background-size: 480px 590px;
+        min-height: 565px;
+        width: 100%;
+    }
+
+    .logout {
+        display: none;
+    }
+
+    #logo {
+        display: block;
+        position: absolute;
+        left: 80%;
+        top: 5%;
+        background-image: url(../images/logo.png);
+        background-repeat: no-repeat;
+        background-size: 60px 60px;
+        height: 60px;
+        width: 60px;
+    }
+
+    #Login {
+        background-color: #a17bcb !important;
+        height: 100px !important;
+    }
+
+    .navbar.navbar-expand-lg.navbar-light.bg-light {
+        margin-top: 0px !important;
+        position: absolute !important;
+        background-color: #eeeeee !important;
+    }
+
+    .Slogan {
+        color: white;
+        font-size: 18px;
+        top: 50%;
+        left: 5%;
+    }
+
+    .invite1, .invite2 {
+        display: none;
+    }
+
+    .btn.btn-primary.active {
+        left: 65%;
+        top: 0%;
+    }
+
+    h5 {
+        right: 33% !important;
+    }
+
+    .event1 {
+        height: auto !important;
+        width: 250px !important;
+        left: 23%;
+
+    }
+
+    .event2 {
+        width: 250px !important;
+        left: 23% !important;
+        height: auto !important;
+        top: 40% !important;
+    }
+
+    .navbar.navbar-expand-lg.navbar-light.bg-light {
+        z-index: 1;
+        padding: 0px !important;
+        text-align: right !important;
+        margin-top: 100px;
+    }
+
+    .navbar-nav.ml-auto.mt-2.mt-lg-0 {
+        padding-top: 50px;
+        background: #eeeeee;
+        height: 300px !important;
+        border-color: black;
+    }
+
+    .btn.btn-outline-success.my-2.my-sm-0 {
+        display: none;
+    }
+
+    .navbar-toggler {
+        border-radius: 0px;
+        border: none;
+        background-color: #a17bcb !important;
+    }
+
+    .btn.btn-primary.active {
+        position: absolute;
+        background-color: #a17bcb !important;
+        border-color: black !important;
+        top: 85%;
+        left: 40%;
+    }
+
+    ul {
+        transform: rotate(180deg) !important;
+    }
+
+    ul > li {
+        transform: rotate(-180deg) !important;
+    }
+
+    .img1 {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        left: 35%;
+        top: 65%;
+        background: url("../images/excel.png") no-repeat;
+        background-size: 150px 150px;
+    }
+
+    .img2 {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        left: 32%;
+        top: 27%;
+        background: url("../images/file.png") no-repeat;
+        background-size: 150px 150px;
+    }
+
+    .upload2 {
+        position: absolute;
+        top: 57% !important;
+        left: 30% !important;
+    }
+
+    .upload1 {
+        position: absolute;
+        left: 20% !important;
+        top: 18% !important;
+    }
+
+    .breadcrumbs, .breadcrumbs2 {
+        display: none;
+    }
+
+    .guestList h5 {
+        right: 20% !important;
+    }
+
+    #table1 th:nth-child(2), th:nth-child(4), th:nth-child(5) {
+        display: none;
+    }
+
+    #table1 td:nth-child(2), td:nth-child(4), td:nth-child(5) {
+        display: none;
+    }
+
+    .into {
+        text-align: center;
+        position: absolute;
+        top: 15%;
+        font-size: 15px;
+        height: 50px;
+        width: 300px;
+        left: 10%;
+    }
+
+    .form-inline.my-2.my-lg-0 {
+        position: absolute;
+        right: 43.5%;
+        top: 48%;
+        width: 40%;
+    }
+     .fa.fa-user-o, button .fa.fa-plus-circle {
+        font-size: 20px;
+    }
+    .guestList2 .table.table-striped {
+        width:80%!important;
+        position: absolute!important;
+        top:40%!important;
+        left: 12%!important;
+    }
+    .guestList2 .form-inline.my-2.my-lg-0 {
+        position: absolute;
+        right: 35%;
+        top: 30%;
+        width: 40%;
+    }
+    #table2 .table.table-striped {
+        width:80%!important;
+        position: absolute!important;
+        top:40%!important;
+        left: 10%!important;
+    }
+    .modal-content {
+        width:80%!important;
+    }
+    .desk1 {
+        width: 40% !important;
+        margin-top:20px;
+        top: 20%;
+    }
+    nav .form-inline.my-2.my-lg-0 {
+        display: none;
+    }
+    .fa-envelope-o, .fa-check-square-o, .fa-list-alt, .fa-calendar-check-o  {
+        margin-left:5px;
+    }
 }
-.sitArrange {
-    position: absolute;
-    top:172px;
-    height: 100%;
-    width: 100%;
-}
-.upload1 {
-    position: absolute;
-    top:25%;
-    left:59.5%;
-    height: 100px;
-    width:300px;
-}
-.upload2 {
-    float:right;
-    position: absolute;
-    top:25%;
-    left:25%;
-    height: 100px;
-    width:200px;
-}
-.img1 {
-    height:300px;
-    width:300px;
-    position: absolute;
-    left:58%;
-    top:35%;
-    background: url("../images/excel.png") no-repeat;
-    background-size: 300px 300px;
-}
-.img2 {
-    height:300px;
-    width:300px;
-    position: absolute;
-    left:20%;
-    top:35%;
-    background: url("../images/file.png") no-repeat;
-    background-size: 300px 300px;
-}
-.guestList {
-    position: absolute;
-    top:172px;
-    height: 100%;
-    width: 100%;
-}
-.into {
-    text-align: right;
-    position: absolute;
-    top:25%;
-    left:40.5%;
-    height: 100px;
-    width:500px;
-}
-section .fa.fa-user-o , section .fa.fa-plus-circle  {
-    color: #a17bcb;
-}
-.table.table-striped {
-    text-align: right;
-    position: relative;
-    top:50%;
-    left:15%;
-    width:70%;
-    height:5%;
-}
-.table-striped tbody tr:nth-of-type(odd){
-    background-color: #a17bcb;
-}
-.btn.btn-primary {
-    position: absolute;
-    top:40%;
-    left:15%;
-    background-color: #a17bcb!important;
-    border-color: black!important;
-}
-.form-control.mr-sm-2 {
-    position: absolute;
-    top:40%;
-    left:68.7%;
-}
+
+/* -------------------------------- */
+
+    .btn-secondary {
+        position: relative;
+        top: 5%;
+        text-align: center;
+        width: 200px;
+        margin-bottom: 20px;
+        border: 1px solid white;
+        background-color: transparent;
+    }
+
+    #homeLogo {
+        display: block;
+        position: absolute;
+        top: 30%;
+        background-image: url(../images/logo.png);
+        background-repeat: no-repeat;
+        background-size: 100px 100px;
+        height: 100px;
+        width: 100px;
+    }
+
+    .btn-secondary:hover {
+        background-color: #bd49c8;
+        border-color: #bd49c8;
+    }
+
+    /* ---------------- LOGIN --------------- */
+    #Login {
+        position: absolute;
+        height: 172px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .btn-outline-success {
+        border-color: white;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .btn-outline-success:hover {
+        background-color: white;
+        color: #bd49c8;
+        border-color: #bd49c8;
+    }
+
+    .collapse.navbar-collapse {
+        margin-top: 10px;
+        height: 40px;
+    }
+
+    .form-control.ml-sm-2 {
+        margin-bottom: 10px;
+    }
+
+    .btn.btn-outline-success.my-2.my-sm-0 {
+        margin-bottom: 10px !important;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+        margin-top: 2px;
+        margin-left: 70px;
+    }
+
+    .Slogan {
+        position: absolute;
+        font-family: Helvetica;
+    }
+
+    .cham {
+        height: 30px;
+        width: 30px;
+        margin-bottom: 6px;
+    }
+
+    .logout {
+        position: absolute;
+        top: 15%;
+        left: 4%;
+    }
+
+    .myEvents {
+        position: absolute;
+        top: 172px;
+        height: 100%;
+        width: 100%;
+    }
+
+    h5 {
+        top: 6%;
+        right: 20%;
+        position: relative;
+        float: right;
+    }
+
+    .event1 {
+        position: relative;
+        top: 25%;
+        text-align: right;
+        background-color: #a17bcb;
+        height: 100px;
+        width: 200px;
+    }
+
+    .event2 {
+        position: relative;
+        top: 65%;
+        left: 65%;
+        text-align: right;
+        background-color: #a17bcb;
+        height: 100px;
+        width: 200px;
+    }
+
+    .sitArrange {
+        position: absolute;
+        top: 172px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .upload1 {
+        position: absolute;
+        top: 25%;
+        left: 59.5%;
+        height: 100px;
+        width: 300px;
+    }
+
+    .upload2 {
+        float: right;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        height: 100px;
+        width: 200px;
+    }
+
+    .guestList, .guestList2 {
+        position: absolute;
+        top: 172px;
+        height: 100%;
+        width: 100%;
+    }
+
+    section .fa.fa-user-o, section .fa.fa-plus-circle {
+        color: #a17bcb;
+    }
+
+    .table.table-striped {
+        text-align: right;
+        position: relative;
+        top: 55%;
+        left: 15%;
+        width: 70%;
+        height: 5%;
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #a17bcb;
+    }
+
+    .btn.btn-primary {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        background-color: #a17bcb !important;
+        border-color: black !important;
+    }
+
+    .form-control.mr-sm-2 {
+        position: absolute;
+        top: 40%;
+        left: 68.7%;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        z-index: 1; /* Sit on top */
+        padding-top: 50px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+        text-align: right;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #table2 {
+        text-align: right;
+    }
+
+    .breadcrumbs {
+        position: absolute;
+        top: 1%;
+        left: 67%;
+    }
+
+    .fa.fa-caret-left {
+        color: #a17bcb;
+    }
+
+    #button {
+        margin-right: 45%;
+    }
+
+    .btn.btn-info {
+        border-color: black;
+        background-color: #a17bcb;
+    }
+
+    .btn.btn-success {
+        border-color: black;
+        background-color: #a17bcb;
+        position: absolute;
+        left: 60%;
+        top: 40%;
+    }
+
+    .fa.fa-window-close {
+        color: red;
+    }
+
+    #delete, .addG {
+        border: none;
+        background-color: transparent;
+    }
+
+    .breadcrumbs2 {
+        position: absolute;
+        top: 1%;
+        left: 60%;
+    }
+
+    #table {
+        width: 50%;
+        position: absolute;
+        left: 35%;
+        text-align: center;
+    }
+
+    .desk1 {
+        position: relative;
+        left: 30%;
+        margin-left: 15px;
+        width: 15%;
+        min-height: 15%;
+        height: auto;
+        background-color: #604a7b;
+        text-align: center;
+        color: white;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .userBtn {
+        background-color: transparent;
+        border: none;
+    }
+
+    .userBtn a, .breadcrumbs2 a, .breadcrumbs a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .btn.btn-success a {
+        color: white;
+        text-decoration: none;
+    }
+

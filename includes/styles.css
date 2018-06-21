@@ -1,6 +1,7 @@
 * {
     margin:0px;
     padding:0px;
+    font-family: 'Suez One', serif;
 }
 
 @media only screen and (min-width: 481px) {
@@ -60,12 +61,12 @@
     }
     .navbar.navbar-expand-lg.navbar-light.bg-light {
         position: relative;
-    background-color: #a17bcb!important;   ;
+    background-color: #f3d9e8!important;   ;
         margin-top: 100px;
     }
     .btn.btn-primary.active {
         position: absolute;
-        background-color: #a17bcb !important;
+        background-color: #f3d9e8 !important;
         border-color: black !important;
     }
     .img1 {
@@ -125,7 +126,7 @@
     }
 
     .cover {
-        background: url(../images/mobilebackground.png) no-repeat;
+        background: url(../images/mobilebackground.png) no-repeat #f3d9e8;
         background-size: 480px 590px;
         min-height: 565px;
         width: 100%;
@@ -148,7 +149,7 @@
     }
 
     #Login {
-        background-color: #a17bcb !important;
+        background-color: #f3d9e8 !important;
         height: 100px !important;
     }
 
@@ -213,12 +214,12 @@
     .navbar-toggler {
         border-radius: 0px;
         border: none;
-        background-color: #a17bcb !important;
+        background-color: #f3d9e8 !important;
     }
 
     .btn.btn-primary.active {
         position: absolute;
-        background-color: #a17bcb !important;
+        background-color: #f3d9e8 !important;
         border-color: black !important;
         top: 85%;
         left: 40%;
@@ -331,6 +332,13 @@
     .fa-envelope-o, .fa-check-square-o, .fa-list-alt, .fa-calendar-check-o  {
         margin-left:5px;
     }
+
+    button.navbar-toggler.collapsed {
+        background-color: #f3d9e8!important;
+    }
+    button.navbar-toggler {
+        background-color: #eeeeee!important;
+    }
 }
 
 /* -------------------------------- */
@@ -357,8 +365,8 @@
     }
 
     .btn-secondary:hover {
-        background-color: #bd49c8;
-        border-color: #bd49c8;
+        background-color: #f7a2e4;
+        border-color: #f7a2e4;
     }
 
     /* ---------------- LOGIN --------------- */
@@ -377,8 +385,8 @@
 
     .btn-outline-success:hover {
         background-color: white;
-        color: #bd49c8;
-        border-color: #bd49c8;
+        color: #f7a2e4;
+        border-color: #f7a2e4;
     }
 
     .collapse.navbar-collapse {
@@ -418,9 +426,11 @@
         left: 4%;
     }
 
-    .myEvents {
+    .myEvents, .sitArrange, .guestList, .guestList2 {
+        background: url(../images/234.jpg) no-repeat;
+        background-size: 1600px 800px;
         position: absolute;
-        top: 172px;
+        top: 166px!important;
         height: 100%;
         width: 100%;
     }
@@ -432,23 +442,48 @@
         float: right;
     }
 
+    .btnEvent{
+        position: absolute;
+        height: 250px;
+        top:15%;
+        left:75%;
+        width: 250px;
+        font-size: 200px;
+        border: none;
+        background-color: transparent;
+    }
+    .btnEvent:focus {
+        outline: 0;}
+
+
+    .addG:focus, .userBtn:focus { outline: 0; }
+
     .event1 {
         position: relative;
         top: 25%;
+        right:20%;
         text-align: right;
-        background-color: #a17bcb;
-        height: 100px;
-        width: 200px;
+        background-color: white;
+        height: 250px;
+        width: 250px;
+        opacity: 0.9;
+        border-radius: 5%;
+    }
+
+    .event1, .event2 p {
+
     }
 
     .event2 {
         position: relative;
-        top: 65%;
-        left: 65%;
+        top: 25%;
+        left: 25%;
         text-align: right;
-        background-color: #a17bcb;
-        height: 100px;
-        width: 200px;
+        background-color: white;
+        height: 250px;
+        width: 250px;
+        opacity: 0.9;
+        border-radius: 5%;
     }
 
     .sitArrange {
@@ -483,7 +518,7 @@
     }
 
     section .fa.fa-user-o, section .fa.fa-plus-circle {
-        color: #a17bcb;
+        color: #f3d9e8;
     }
 
     .table.table-striped {
@@ -495,15 +530,12 @@
         height: 5%;
     }
 
-    .table-striped tbody tr:nth-of-type(odd) {
-        background-color: #a17bcb;
-    }
 
     .btn.btn-primary {
         position: absolute;
         top: 40%;
         left: 15%;
-        background-color: #a17bcb !important;
+        background-color: #f7a2e4 !important;
         border-color: black !important;
     }
 
@@ -563,21 +595,20 @@
     }
 
     .fa.fa-caret-left {
-        color: #a17bcb;
+        color: #f3d9e8;
     }
-
     #button {
         margin-right: 45%;
     }
 
     .btn.btn-info {
         border-color: black;
-        background-color: #a17bcb;
+        background-color: #f7a2e4;
     }
 
     .btn.btn-success {
         border-color: black;
-        background-color: #a17bcb;
+        background-color: #f7a2e4;
         position: absolute;
         left: 60%;
         top: 40%;
@@ -612,7 +643,7 @@
         width: 15%;
         min-height: 15%;
         height: auto;
-        background-color: #604a7b;
+        background-color: #f7a2e4;
         text-align: center;
         color: white;
     }

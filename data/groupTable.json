@@ -1,0 +1,28 @@
+
+[
+  {
+    "relation": "צד האמא",
+    "number": 11,
+    "priority": 1,
+    "groupName": "משפחת כהן"
+  },
+   {
+     "relation": "צד האבא",
+     "number": 22,
+     "priority": 1,
+     "groupName": "משפחת איילון"
+   },
+  {
+    "relation": "צד האמא",
+    "number": 7,
+    "priority": 4,
+    "groupName": "חברים מהצבא"
+  },
+  {
+    "relation": "צד האבא",
+    "number": 15,
+    "priority": 2,
+    "groupName": "חברים מהתיכון"
+  }
+]
+

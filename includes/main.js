@@ -2,7 +2,7 @@
 $("#process").click(function () {
     alert("הסידור נוצר בהצלחה");
 });
-
+/*
 var popup3 = document.getElementById('popup3');
 
 // Get the button that opens the modal
@@ -30,7 +30,7 @@ save.onclick = function () {
         "                סוג מנה:רגילה<br>\n" +
         "                סטטוס הגעה:בתהליך"
 };
-
+*/
 var popup1 = document.getElementById('popup1');
 
 // Get the button that opens the modal
@@ -49,8 +49,27 @@ span.onclick = function() {
     popup1.style.display = "none";
 };
 
+$(document).ready(function() {
+    $.getJSON("data/groupTable.json", function(data) {
+        for(row of data) {
+            var table_row = $(
+                '<tr>' +
+                '<td>' + '<button class="addG" type="button">' + '<i class="fa fa-plus-circle" aria-hidden="true">' + '</i>' +
+                '</button>' + '</td>' +
+                '<td>' + row.relation + '</td>' +
+                '<td>' + '<button class="userBtn" type="button">' + '<i class="fa fa-user-o" aria-hidden="true">' + '</i>' +
+                '</button>' + '</td>' +
+                '<td>' + row.number + '</td>' +
+                '<td>' + row.priority + '</td>' +
+                '<td>' + row.groupName + '</td>' +
+                '</tr>'
+            )
+            $("#tbody1").append(table_row)
+        }
+    });
+});
 
-//small table popup1
+//small table popup1 ADD
 var count=0;
 var addRow = document.getElementById('add');
 addRow.onclick = function () {
@@ -77,6 +96,7 @@ function deleteRow(el) {
     }
     count--;
 }
+
 
 
 ///big table
@@ -159,6 +179,7 @@ update.onclick = function () {
     popup2.style.display = "none";
 
 }
+
 
 
 

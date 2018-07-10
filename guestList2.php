@@ -1,3 +1,33 @@
+<?php
+define("DBHOST" , "182.50.133.51");
+define("DBUSER" , "studDB18A");
+define("DBPASS" , "stud18aDB1!");
+define("DBNAME" , "studDB18A");
+$connection = mysqli_connect(DBHOST, DBUSER , DBPASS , DBNAME);
+//testing connection success
+if(mysqli_connect_errno()) {
+    die("DB connection failed: " . mysqli_connect_error() . " (" . mysqli_connect_errno() . ")"
+    );
+}
+?>
+
+<?php
+    $query="SELECT * FROM tb_users_203";
+    $result=mysqli_query($connection, $query);
+    if(!$result) {
+        die("DB query failed.");
+    }
+        $fname = $_POST["fullName"];
+
+        $query2 = "INSERT into tb_users_203(foodType,guestName) values (' ', '$fname')";
+        $result = mysqli_query($connection, $query2);
+
+        $query2 = "SELECT * FROM tb_users_203";
+        $result = mysqli_query($connection, $query2);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +43,7 @@ css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="includes/styles.css">
     <script src="includes/jquery-3.1.1.min.js"></script>
-    <script src="includes/main.js" async></script>
+    <script src="includes/main3.js" async></script>
     <meta charset="UTF-8">
     <title>W.E.D.D</title>
 </head>
@@ -54,6 +84,7 @@ css/font-awesome.min.css">
 <main class="guestList2">
     <h5>רשימת מוזמנים</h5>
 
+
     <section class="into">
         חברים של האמא- חברים מהצבא
     </section>
@@ -65,20 +96,15 @@ css/font-awesome.min.css">
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>טבעונית</td>
-            <td>רון לוי</td>
-        </tr>
-        <tr>
-            <td>-</td>
-            <td>דניאל משה</td>
-        </tr>
-        <tr>
-            <td>רגיל</td>
-            <td>מיטל רוזן</td>
-        </tr>
+        <?php
+        while($row = mysqli_fetch_assoc($result)) {
+            echo "<tr><td>" . $row["foodType"] . "</td>";
+            echo "<td>" . $row["guestName"] . "</td></tr>";
+        }
+        ?>
         </tbody>
     </table>
+    <button type="button" id="addG" class="btn btn-primary">הוספת אורח</button>
     <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     </form>
@@ -86,4 +112,32 @@ css/font-awesome.min.css">
 </main>
 
 </body>
+<div id="popup2" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h5>הוספת מוזמן חדש</h5>
+        <h6>משפחת כהן</h6>
+        <form class="myForm" action="" method="post" autocomplete="on" id="posts">
+            <label>שם מוזמן<input class="form-control" type="text" id="fname" name="fullName"></label><br>
+            <button type="button" class="btn btn-info" id="add1">הוספה</button>
+            <table id="table3" class="table table-bordere">
+                <thead>
+                <tr>
+                    <th scope="col">שם</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <input type="submit" value="שמור" class="btn btn-info" id="button1" name="submit">
+        </form>
+    </div>
+
+</div>
 </html>
+<?php
+mysqli_close($connection);
+?>

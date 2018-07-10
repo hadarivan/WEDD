@@ -396,6 +396,10 @@
 
 /* -------------------------------- */
 
+.btn-success{
+    color:#f3919e!important;
+}
+
 .btn-secondary {
     position: relative;
     top: 5%;
@@ -423,6 +427,8 @@
 }
 
 /* ---------------- LOGIN --------------- */
+
+
 #Login {
     position: absolute;
     height: 172px;
@@ -499,7 +505,7 @@ h5 {
     outline: 0;}
 
 
-.addG:focus, .userBtn:focus { outline: 0; }
+.userBtn:focus { outline: 0; }
 
 .event1 {
     position: relative;
@@ -662,9 +668,18 @@ section .fa.fa-user-o, section .fa.fa-plus-circle {
     color: white !important;
 }
 
-.btn.btn-success {
+.btn-outline-dark {
     border-color: #f3919e;
     background-color: transparent;
+    color: #f3919e !important;
+    position: absolute;
+    left: 60%;
+    top: 30%;
+}
+.btn.btn-success{
+    border-color: #f3919e;
+    background-color: transparent;
+    color: #f3919e !important;
     position: absolute;
     left: 60%;
     top: 30%;
@@ -672,8 +687,6 @@ section .fa.fa-user-o, section .fa.fa-plus-circle {
 .btn.btn-success a {
     color: #f3919e!important;
 }
-
-
 .btn.btn-success a:hover {
     color:white!important;
 }
@@ -687,7 +700,7 @@ section .fa.fa-user-o, section .fa.fa-plus-circle {
     color: red;
 }
 
-#delete, .addG {
+#delete{
     border: none;
     background-color: transparent;
 }

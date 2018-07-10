@@ -2,37 +2,8 @@
 $("#process").click(function () {
     alert("הסידור נוצר בהצלחה");
 });
-/*
-var popup3 = document.getElementById('popup3');
 
-// Get the button that opens the modal
-var btn1 = document.getElementById('check');
-
-// Get the <span> element that closes the modal
-var span1 = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn1.onclick = function() {
-    popup3.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span1.onclick = function() {
-    popup3.style.display = "none";
-};
-
-var save = document.getElementById('button2');
-save.onclick = function () {
-    popup3.style.display = "none";
-    var change=document.getElementById('text')
-    change.innerHTML="שם: הברית של יואב<br>\n" +
-        "                תאריך:18.8.2018<br>\n" +
-        "                סוג מנה:רגילה<br>\n" +
-        "                סטטוס הגעה:בתהליך"
-};
-*/
 var popup1 = document.getElementById('popup1');
-
 // Get the button that opens the modal
 var btn = document.getElementById('myBtn');
 
@@ -49,13 +20,11 @@ span.onclick = function() {
     popup1.style.display = "none";
 };
 
-$(document).ready(function() {
+$(function() {
     $.getJSON("data/groupTable.json", function(data) {
         for(row of data) {
             var table_row = $(
                 '<tr>' +
-                '<td>' + '<button class="addG" type="button">' + '<i class="fa fa-plus-circle" aria-hidden="true">' + '</i>' +
-                '</button>' + '</td>' +
                 '<td>' + row.relation + '</td>' +
                 '<td>' + '<button class="userBtn" type="button">' + '<i class="fa fa-user-o" aria-hidden="true">' + '</i>' +
                 '</button>' + '</td>' +
@@ -65,9 +34,11 @@ $(document).ready(function() {
                 '</tr>'
             )
             $("#tbody1").append(table_row)
+
         }
     });
 });
+
 
 //small table popup1 ADD
 var count=0;
@@ -130,55 +101,8 @@ addRow2.onclick = function () {
     }
     popup1.style.display = "none";
 
-}
+};
 
-
-var popup2 = document.getElementById('popup2');
-var tableSize=document.getElementById('table1').getElementsByTagName('tbody')[0];
-// Get the button that opens the modal
-for (var i=0; i<tableSize.rows.length ; i++)
-{
-    var addG = document.getElementsByClassName("addG")[i];
-    var spanAdd = document.getElementsByClassName("close")[1];
-
-// When the user clicks the button, open the modal
-    addG.onclick = function() {
-        popup2.style.display = "block";
-    };
-
-// When the user clicks on <span> (x), close the modal
-    spanAdd.onclick = function() {
-        popup2.style.display = "none";
-    };
-    window.onclick = function(event) {
-        if (event.target == popup2) {
-            popup2.style.display = "none";
-        }
-    };
-}
-/// small table popup2
-var countGuest=0;
-var addRow1 = document.getElementById('add1');
-addRow1.onclick = function () {
-    var tableRef = document.getElementById('table3').getElementsByTagName('tbody')[0];
-// Insert a row in the table at the last row
-    var newRow   = tableRef.insertRow(tableRef.rows.length);
-// Insert a cell in the row at index 0
-    var fname = document.getElementById('fname').value;
-    var cel1 = newRow.insertCell(0);
-    cel1.innerHTML = fname;
-    countGuest++;
-}
-
-var update = document.getElementById('button1');
-update.onclick = function () {
-    var tableRef = document.getElementById('table1').getElementsByTagName('tbody')[0];
-    var x=document.getElementById('table1').rows;
-    var y=x[1].cells;
-    y[3].innerHTML=11+countGuest;
-    popup2.style.display = "none";
-
-}
 
 
 

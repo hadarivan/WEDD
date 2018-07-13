@@ -41,6 +41,22 @@ update.onclick = function () {
 }
 
 $(function() {
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            url: "servers/db.php",
+            data: {},
+            cache: true,
+            success: function (data) {
+
+            }
+        });
+        return false;
+    });
+});
+
+
+$(function() {
     $("#posts").submit(function () {
         var fname = $("#fname").val();
         var foodType = " ";
@@ -48,11 +64,19 @@ $(function() {
         console.log(dataString);
         $.ajax({
             type: "POST",
-            url: "guestList2.php",
+            url: "servers/db.php",
             data: dataString,
-            cache: true
+            cache: true,
+            success: function (data) {
+
+            }
         });
         return false;
     });
 });
-
+/*
+for(var i=0; i<5; i++) {
+    var element = document.getElementById("delete");
+    element.classList.add =("hello");
+}
+*/

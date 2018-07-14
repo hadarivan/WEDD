@@ -1,8 +1,4 @@
 
-$("#process").click(function () {
-    alert("הסידור נוצר בהצלחה");
-});
-
 var popup1 = document.getElementById('popup1');
 // Get the button that opens the modal
 var btn = document.getElementById('myBtn');
@@ -26,8 +22,8 @@ $(function() {
             var table_row = $(
                 '<tr>' +
                 '<td>' + row.relation + '</td>' +
-                '<td>' + '<button class="userBtn" type="button">' + '<i class="fa fa-user-o" aria-hidden="true">' + '</i>' +
-                '</button>' + '</td>' +
+                '<td>' + '<a href="#" class="userBtn" type="button">' + '<i class="fa fa-user-o" aria-hidden="true">' + '</i>' +
+                '</a>' + '</td>' +
                 '<td>' + row.number + '</td>' +
                 '<td>' + row.priority + '</td>' +
                 '<td>' + row.groupName + '</td>' +

@@ -14,7 +14,6 @@ css/font-awesome.min.css">
     <link rel="stylesheet" href="includes/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="includes/main.js" async></script>
     <script src="includes/main2.js" async></script>
     <title>W.E.D.D</title>
 </head>
@@ -29,7 +28,7 @@ css/font-awesome.min.css">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0" action="" method="post">
                 <input class="form-control ml-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
@@ -83,20 +82,21 @@ css/font-awesome.min.css">
     <div class="modal-content">
         <span class="close">&times;</span>
         <h5>הברית של יואב</h5>
-        <form class="myForm" action="#" method="get" autocomplete="on">
-        <select class="custom-select" multiple>
+        <form target="hiddenFrame" class="myForm" action="servers/db.php" method="post" autocomplete="on" id="course">
+        <select name="choice" class="custom-select" multiple>
             <option selected>בתהליך</option>
-            <option value="1">טבעוני</option>
-            <option value="2">צמחוני</option>
-            <option value="3">כשר למהדרין</option>
-            <option value="4">רגילה</option>
-            <option value="5">מנת ילדים</option>
-            <option value="6">ללא גלוטן</option>
+            <option value="טבעונית">טבעונית</option>
+            <option value="צמחונית">צמחונית</option>
+            <option value="כשר למהדרין">כשר למהדרין</option>
+            <option value="רגילה">רגילה</option>
+            <option value="מנת ילדים">מנת ילדים</option>
+            <option value="ללא גלוטן">ללא גלוטן</option>
         </select>
-            <button type="button" class="btn btn-info" id="button2">שמור</button>
+            <input type="submit" value="שמור" class="btn btn-info" id="button2" name="submit">
         </form>
     </div>
 
 </div>
+<div><iframe name="hiddenFrame" class="hide"></iframe></div>
 </body>
 </html>

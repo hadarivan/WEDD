@@ -40,21 +40,19 @@ update.onclick = function () {
 
 }
 
-$(function() {
-    $(document).ready(function () {
-        $.ajax({
-            type: "POST",
-            url: "servers/db.php",
-            data: {},
-            cache: true,
-            success: function (data) {
-
-            }
-        });
-        return false;
+var tbody = document.getElementById("tbody2");
+$("document").ready(function () {
+    console.log("first");
+    $.ajax({
+        url: "servers/db.php",
+        type: "POST",
+        data: {},
+        success: function (data) {
+            tbody.innerHTML += data;
+            $('.delete').click(deleteUser);
+        }
     });
 });
-
 
 $(function() {
     $("#posts").submit(function () {
@@ -68,15 +66,52 @@ $(function() {
             data: dataString,
             cache: true,
             success: function (data) {
-
+                tbody.innerHTML = data;
+                $('.delete').click(deleteUser);
             }
         });
         return false;
     });
 });
-/*
-for(var i=0; i<5; i++) {
-    var element = document.getElementById("delete");
-    element.classList.add =("hello");
+
+function deleteUser() {
+    itemID = $(this).attr("id");
+    //console.log(itemID);
+
+    $.ajax({
+        url: "servers/db.php",
+        type: "POST",
+        data: {
+            id: itemID
+        },
+        success: function (data) {
+            tbody.innerHTML = data;
+            $('.delete').click(deleteUser);
+        }
+
+    });
+
 }
+
+/*
+
+window.onload = function() {
+    var popup4 = document.getElementById('popup4');
+// Get the button that opens the modal
+    console.log("Second");
+    for (var i = 0; i < count; i++) {
+        var updateC = document.getElementsByClassName('edit')[0];
+        console.log(updateC);
+        var spanU = document.getElementsByClassName("close")[1];
+
+// When the user clicks the button, open the modal
+        updateC.onclick = function () {
+            popup4.style.display = "block";
+        };
+
+        spanU.onclick = function () {
+            popup4.style.display = "none";
+        };
+    }
+};
 */

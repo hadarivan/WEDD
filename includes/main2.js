@@ -16,12 +16,33 @@ span1.onclick = function() {
     popup3.style.display = "none";
 };
 
+
+
+$(function() {
+    $("#course").submit(function () {
+        var course = $("#choice").val();
+        console.log(choice);
+        $.ajax({
+            type: "POST",
+            url: "servers/db.php",
+            data: {
+                id: course
+            },
+            cache: true,
+            success: function (data) {
+               console.log("Success");
+            }
+        });
+        return false;
+    });
+});
+
 var save = document.getElementById('button2');
 save.onclick = function () {
     popup3.style.display = "none";
     var change=document.getElementById('text')
     change.innerHTML="שם: הברית של יואב<br>\n" +
         "                תאריך:18.8.2018<br>\n" +
-        "                סוג מנה:רגילה<br>\n" +
+        "                סוג מנה:רגילה<br>" +
         "                סטטוס הגעה:בתהליך"
 };

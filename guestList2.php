@@ -14,6 +14,7 @@ css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="includes/styles.css">
     <script src="includes/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="includes/main3.js" async></script>
     <meta charset="UTF-8">
     <title>W.E.D.D</title>
@@ -28,7 +29,7 @@ css/font-awesome.min.css">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0" action="" method="post">
                 <input class="form-control ml-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
@@ -66,11 +67,11 @@ css/font-awesome.min.css">
             <th scope="col">שם מוזמן</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody id="tbody2">
         </tbody>
     </table>
-    <button type="button" id="addG" class="btn btn-primary">הוספת אורח</button>
-    <form class="form-inline my-2 my-lg-0">
+    <button type="button" id="addG" class="btn btn-outline-secondary">הוספת אורח</button>
+    <form class="form-inline my-2 my-lg-0" action="" method="post">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     </form>
     <p class="breadcrumbs2"><a href="http://shenkar.html5-book.co.il/2017-2018/web1/dev_203/sitArrange.html">סידורי ישיבה</a><i class="fa fa-caret-left" aria-hidden="true"></i><a href="http://shenkar.html5-book.co.il/2017-2018/web1/dev_203/guestList.html">ניהול רשימת מוזמנים ידנית</a><i class="fa fa-caret-left" aria-hidden="true"></i><b>רשימת מוזמנים</b></p>
@@ -84,7 +85,7 @@ css/font-awesome.min.css">
         <span class="close">&times;</span>
         <h5>הוספת מוזמן חדש</h5>
         <h6>משפחת כהן</h6>
-        <form class="myForm" action="" method="post" autocomplete="on" id="posts">
+        <form class="myForm" action="servers/db.php" method="post" id="posts">
             <label>שם מוזמן<input class="form-control" type="text" id="fname" name="fullName"></label><br>
             <button type="button" class="btn btn-info" id="add1">הוספה</button>
             <table id="table3" class="table table-bordere">
@@ -93,7 +94,7 @@ css/font-awesome.min.css">
                     <th scope="col">שם</th>
                 </tr>
                 </thead>
-                <tbody id="tbody2">
+                <tbody>
 
                 </tbody>
             </table>
@@ -102,4 +103,5 @@ css/font-awesome.min.css">
     </div>
 
 </div>
+
 </html>

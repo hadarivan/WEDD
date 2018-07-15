@@ -22,7 +22,7 @@ $(function() {
             var table_row = $(
                 '<tr>' +
                 '<td>' + row.relation + '</td>' +
-                '<td>' + '<a href="#" class="userBtn" type="button">' + '<i class="fa fa-user-o" aria-hidden="true">' + '</i>' +
+                '<td>' + '<a href="http://shenkar.html5-book.co.il/2017-2018/web1/dev_203/guestList2.php" class="userBtn">' + '<i class="fa fa-user-o" aria-hidden="true">' + '</i>' +
                 '</a>' + '</td>' +
                 '<td>' + row.number + '</td>' +
                 '<td>' + row.priority + '</td>' +
@@ -30,7 +30,6 @@ $(function() {
                 '</tr>'
             )
             $("#tbody1").append(table_row)
-
         }
     });
 });
@@ -86,13 +85,11 @@ addRow2.onclick = function () {
         var cel3 = newRow.insertCell(2);
         var cel4 = newRow.insertCell(3);
         var cel5 = newRow.insertCell(4);
-        var cel6 = newRow.insertCell(5);
-        cel1.innerHTML = '<button class="addG" type="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>';
-        cel2.innerHTML = relation;
-        cel3.innerHTML = '<i class="fa fa-user-o" aria-hidden="true"></i>';
-        cel4.innerHTML = count;
-        cel5.innerHTML = prio;
-        cel6.innerHTML = gname;
+        cel1.innerHTML = relation;
+        cel2.innerHTML = '<a href="#" class="userBtn">' + '<i class="fa fa-user-o" aria-hidden="true">';
+        cel3.innerHTML = count;
+        cel4.innerHTML = prio;
+        cel5.innerHTML = gname;
 
     }
     popup1.style.display = "none";

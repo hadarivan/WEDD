@@ -12,6 +12,11 @@ if(mysqli_connect_errno()) {
     );
 }
 
+if(!mysqli_set_charset($connection, 'utf8')) {
+    echo 'the connection is not in utf8';
+    exit();
+}
+
 $query="SELECT * FROM tb_users_203";
 $result=mysqli_query($connection, $query);
 if(!$result) {

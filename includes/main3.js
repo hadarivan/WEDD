@@ -93,25 +93,3 @@ function deleteUser() {
 
 }
 
-/*
-
-window.onload = function() {
-    var popup4 = document.getElementById('popup4');
-// Get the button that opens the modal
-    console.log("Second");
-    for (var i = 0; i < count; i++) {
-        var updateC = document.getElementsByClassName('edit')[0];
-        console.log(updateC);
-        var spanU = document.getElementsByClassName("close")[1];
-
-// When the user clicks the button, open the modal
-        updateC.onclick = function () {
-            popup4.style.display = "block";
-        };
-
-        spanU.onclick = function () {
-            popup4.style.display = "none";
-        };
-    }
-};
-*/

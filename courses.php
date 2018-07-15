@@ -46,7 +46,7 @@ css/font-awesome.min.css">
                     <a class="nav-link" href="#">בחירת סוג מנה<i class="fa fa-check-square-o" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">האירועים שלי<i class="fa fa-calendar-check-o" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="http://shenkar.html5-book.co.il/2017-2018/web1/dev_203/guestLogin.html">האירועים שלי<i class="fa fa-calendar-check-o" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <p class="navbar-brand"><b>שלום, דור</b></p>
